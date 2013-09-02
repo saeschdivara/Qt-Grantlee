@@ -69,14 +69,14 @@ add_custom_command(
 configure_file(testresource.qrc.cmake "${PROJECT_BINARY_DIR}/testresource.qrc")
 
 set (_rcc_file "${PROJECT_BINARY_DIR}/testresource.qrc")
-qt4_add_resources(_testresource_rcc_src ${_rcc_file} OPTIONS -root "/" )
+qt5_add_resources(_testresource_rcc_src ${_rcc_file} OPTIONS -root "/" )
 
-qt4_generate_moc(coverageobject.h "${CMAKE_CURRENT_BINARY_DIR}/coverageobject.moc")
+qt5_generate_moc(coverageobject.h "${CMAKE_CURRENT_BINARY_DIR}/coverageobject.moc")
 macro(GRANTLEE_TEMPLATES_UNIT_TESTS)
   foreach(_testname ${ARGN})
     set(_testSrcs ${_testname}.cpp )
     set(moc_output_file "${CMAKE_CURRENT_BINARY_DIR}/${_testname}.moc")
-    qt4_generate_moc(${_testname}.cpp ${moc_output_file})
+    qt5_generate_moc(${_testname}.cpp ${moc_output_file})
     add_executable(${_testname}_exec
                   ${_testSrcs}
                   coverageobject.cpp

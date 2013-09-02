@@ -39,7 +39,7 @@ set(textedit_example_RCSS
   textedit.qrc
 )
 
-qt4_add_resources(
+qt5_add_resources(
   textedit_example_RCS_SRCS
   ${textedit_example_RCSS}
 )

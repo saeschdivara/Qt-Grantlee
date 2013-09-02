@@ -23,7 +23,7 @@ set(codegen_example_RCSS
   codegen.qrc
 )
 
-qt4_add_resources(
+qt5_add_resources(
   codegen_example_RCS_SRCS
   ${codegen_example_RCSS}
 )
@@ -32,7 +32,7 @@ set(codegen_example_tags_RCSS
   custom_tags.qrc
 )
 
-qt4_add_resources(
+qt5_add_resources(
   codegen_example_RCS_SRCS
   ${codegen_example_tags_RCSS}
   OPTIONS -root "/plugins/grantlee/${Grantlee_VERSION_MAJOR}.${Grantlee_VERSION_MINOR}/"
@@ -42,7 +42,7 @@ set(codegen_example_UI
   designwidget.ui
 )
 
-qt4_wrap_ui(codegen_example_UI_SRCS ${codegen_example_UI})
+qt5_wrap_ui(codegen_example_UI_SRCS ${codegen_example_UI})
 
 add_executable(codegen
   ${codegen_example_SRCS}

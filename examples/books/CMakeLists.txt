@@ -26,7 +26,7 @@ set(books_example_UI
 
 QT4_WRAP_UI(books_example_UI_SRCS ${books_example_UI})
 
-qt4_add_resources(
+qt5_add_resources(
   books_example_RCS_SRCS
   ${books_example_RCSS}
 )
