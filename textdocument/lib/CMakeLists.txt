@@ -18,7 +18,7 @@ add_library(Grantlee::TextDocument ALIAS Grantlee_TextDocument)
 set_property(TARGET Grantlee_TextDocument PROPERTY EXPORT_NAME TextDocument)
 
 target_link_libraries(Grantlee_TextDocument
-  LINK_PUBLIC Qt4::QtGui
+  LINK_PUBLIC Qt5::Gui
 )
 
 if (NOT CMAKE_BUILD_TYPE MATCHES TestCocoon)

@@ -11,7 +11,7 @@ set_target_properties(myplugin
   PROPERTIES PREFIX ""
 )
 target_link_libraries(myplugin
-  Qt4::QtCore
+  Qt5::Core
 )
 
 add_executable(main_app main.cpp ${myplugin_sources} ${_plugin_moc_srcs})
@@ -20,5 +20,5 @@ target_include_directories(main_app
     $<TARGET_PROPERTY:Grantlee::Templates,INTERFACE_INCLUDE_DIRECTORIES>
 )
 target_link_libraries(main_app
-  Qt4::QtCore
+  Qt5::Core
 )

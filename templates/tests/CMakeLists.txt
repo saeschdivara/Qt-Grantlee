@@ -1,6 +1,6 @@
 project(grantlee_templates_tests)
 
-find_package(Qt4 4.5.0 REQUIRED QtTest)
+find_package(Qt5Test 5.2.0 CONFIG REQUIRED)
 
 #building on Solaris with Sun Studio uses stdcxx which does not have TR1 fully implemented
 #take it from boost
@@ -85,7 +85,7 @@ macro(GRANTLEE_TEMPLATES_UNIT_TESTS)
                   ${_testresource_rcc_src}
     )
     add_test(${_testname} ${_testname}_exec )
-    target_link_libraries(${_testname}_exec Qt4::QtTest Grantlee::Templates )
+    target_link_libraries(${_testname}_exec Qt5::Test Grantlee::Templates )
 
     set_property(GLOBAL APPEND PROPERTY TEST_COVERAGE "${CMAKE_CURRENT_BINARY_DIR}/${_testname}_exec" )
   endforeach(_testname)

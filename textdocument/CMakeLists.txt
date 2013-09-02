@@ -1,5 +1,5 @@
 
-find_package(Qt4 4.5.0 REQUIRED QtGui)
+find_package(Qt5Gui 5.2.0 CONFIG REQUIRED)
 
 add_subdirectory(lib)
 
