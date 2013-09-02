@@ -133,7 +133,7 @@ QString QtLocalizerPrivate::translate( const QString& input, const QString& cont
   }
   if ( result.isEmpty() ) {
     if ( locale->systemTranslators.isEmpty() )
-      return QCoreApplication::translate( "GR_FILENAME", input.toLatin1().constData(), context.toLatin1().constData(), QCoreApplication::CodecForTr, count );
+      return QCoreApplication::translate( "GR_FILENAME", input.toLatin1().constData(), context.toLatin1().constData(), count );
     Q_FOREACH( QTranslator *translator, locale->systemTranslators ) {
       result = translator->translate( "GR_FILENAME", input.toLatin1().constData(), context.toLatin1().constData(), count );
       if ( !result.isEmpty() )
