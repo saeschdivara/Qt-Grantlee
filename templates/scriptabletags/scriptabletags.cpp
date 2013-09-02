@@ -197,7 +197,4 @@ void ScriptableTagLibrary::addFilter( const QString &filterName )
   m_filterNames << filterName;
 }
 
-Q_EXPORT_PLUGIN2( grantlee_scriptabletags_library, ScriptableTagLibrary )
-
-
 #include "scriptabletags.moc"

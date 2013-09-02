@@ -37,5 +37,3 @@ int MyObject::double_it( int input )
 {
   return input * 2;
 }
-
-Q_EXPORT_PLUGIN2( myplugin, MyObject )
