@@ -74,6 +74,7 @@ add_definitions(
   -DQT_NO_URL_CAST_FROM_STRING
   -DQT_NO_CAST_FROM_BYTEARRAY
   -DQT_NO_KEYWORDS
+  -DQT_USE_QSTRINGBUILDER
 )
 
 # Always include the source and build directories in the include path
