@@ -22,7 +22,7 @@
 #define GRANTLEE_TYPEACCESSOR_H
 
 #include "containeraccessor.h"
-#include "grantlee_core_export.h"
+#include "grantlee_templates_export.h"
 
 #include <QtCore/QLinkedList>
 #include <QtCore/QSet>
@@ -132,12 +132,12 @@ QVariant doAssociativeContainerLookup( const Container &object, const QString &p
 
 #ifndef Q_QDOC
 template <>
-QVariant GRANTLEE_CORE_EXPORT TypeAccessor<QObject*>::lookUp( const QObject * const object, const QString &property );
+QVariant GRANTLEE_TEMPLATES_EXPORT TypeAccessor<QObject*>::lookUp( const QObject * const object, const QString &property );
 
 /**
  * @internal Looks up the property @p property from QObject @p object.
  */
-QVariant GRANTLEE_CORE_EXPORT doQobjectLookUp( const QObject * const object, const QString& property );
+QVariant GRANTLEE_TEMPLATES_EXPORT doQobjectLookUp( const QObject * const object, const QString& property );
 #endif
 }
 

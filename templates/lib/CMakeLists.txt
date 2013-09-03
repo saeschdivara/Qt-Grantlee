@@ -53,36 +53,38 @@ endforeach()
 
 set(Grantlee_TEMPLATES_LIB_SOVERSION ${Grantlee_VERSION_MAJOR})
 
-add_library(grantlee_core SHARED
+add_library(Grantlee_Templates SHARED
   ${grantlee_templates_SRCS}
   ${scriptabletags_SRCS}
 )
-generate_export_header(grantlee_core)
-target_include_directories(grantlee_core PRIVATE ../scriptabletags)
+add_library(Grantlee::Templates ALIAS Grantlee_Templates)
+generate_export_header(Grantlee_Templates)
+set_property(TARGET Grantlee_Templates PROPERTY EXPORT_NAME Templates)
+target_include_directories(Grantlee_Templates PRIVATE ../scriptabletags)
 
 if (BUILD_TESTS)
-  set(GRANTLEE_TESTS_EXPORT "GRANTLEE_CORE_EXPORT")
+  set(GRANTLEE_TESTS_EXPORT "GRANTLEE_TEMPLATES_EXPORT")
 endif()
 
 configure_file(grantlee_test_export.h.in "${CMAKE_CURRENT_BINARY_DIR}/grantlee_test_export.h")
 
 file(READ "${CMAKE_CURRENT_BINARY_DIR}/grantlee_test_export.h" _content)
 
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/grantlee_core_export.h" "${_content}")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/grantlee_templates_export.h" "${_content}")
 
-target_link_libraries(grantlee_core
+target_link_libraries(Grantlee_Templates
   LINK_PUBLIC Qt4::QtCore
   LINK_PRIVATE Qt4::QtScript
 )
 
 if (NOT CMAKE_BUILD_TYPE MATCHES TestCocoon)
-  set_target_properties(grantlee_core PROPERTIES
+  set_target_properties(Grantlee_Templates PROPERTIES
     VERSION    ${Grantlee_VERSION_MAJOR}.${Grantlee_VERSION_MINOR}.${Grantlee_VERSION_PATCH}
     SOVERSION  ${Grantlee_TEMPLATES_LIB_SOVERSION}
   )
 endif()
 
-install(TARGETS grantlee_core EXPORT grantlee_targets
+install(TARGETS Grantlee_Templates EXPORT grantlee_targets
          RUNTIME DESTINATION ${BIN_INSTALL_DIR} COMPONENT Templates
          LIBRARY DESTINATION ${LIB_INSTALL_DIR} COMPONENT Templates
          ARCHIVE DESTINATION ${LIB_INSTALL_DIR} COMPONENT Templates
@@ -98,7 +100,7 @@ install(FILES
   exception.h
   filter.h
   filterexpression.h
-  ${PROJECT_BINARY_DIR}/grantlee_core_export.h
+  ${PROJECT_BINARY_DIR}/grantlee_templates_export.h
   ${PROJECT_BINARY_DIR}/grantlee_version.h
   metatype.h
   node.h
@@ -118,7 +120,6 @@ install(FILES
 )
 
 install(FILES
-  grantlee_core.h
   grantlee_templates.h
   DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Templates
 )

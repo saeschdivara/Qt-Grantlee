@@ -27,6 +27,6 @@
 #include "grantlee/plaintextmarkupbuilder.h"
 #include "grantlee/texthtmlbuilder.h"
 #include "grantlee/mediawikimarkupbuilder.h"
-#include "grantlee/grantlee_gui_export.h"
+#include "grantlee/grantlee_textdocument_export.h"
 
 #endif

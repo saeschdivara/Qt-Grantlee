@@ -10,23 +10,25 @@ set (grantlee_textdocument_SRCS
 
 set(Grantlee_TEXTDOCUMENT_LIB_SOVERSION ${Grantlee_VERSION_MAJOR})
 
-add_library(grantlee_gui SHARED
+add_library(Grantlee_TextDocument SHARED
   ${grantlee_textdocument_SRCS}
 )
-generate_export_header(grantlee_gui)
+generate_export_header(Grantlee_TextDocument)
+add_library(Grantlee::TextDocument ALIAS Grantlee_TextDocument)
+set_property(TARGET Grantlee_TextDocument PROPERTY EXPORT_NAME TextDocument)
 
-target_link_libraries(grantlee_gui
+target_link_libraries(Grantlee_TextDocument
   LINK_PUBLIC Qt4::QtGui
 )
 
 if (NOT CMAKE_BUILD_TYPE MATCHES TestCocoon)
-  set_target_properties(grantlee_gui PROPERTIES
+  set_target_properties(Grantlee_TextDocument PROPERTIES
     VERSION    ${Grantlee_VERSION_MAJOR}.${Grantlee_VERSION_MINOR}.${Grantlee_VERSION_PATCH}
     SOVERSION  ${Grantlee_TEXTDOCUMENT_LIB_SOVERSION}
   )
 endif()
 
-install(TARGETS grantlee_gui EXPORT grantlee_targets
+install(TARGETS Grantlee_TextDocument EXPORT grantlee_targets
          RUNTIME DESTINATION ${BIN_INSTALL_DIR} COMPONENT TextDocument
          LIBRARY DESTINATION ${LIB_INSTALL_DIR} COMPONENT TextDocument
          ARCHIVE DESTINATION ${LIB_INSTALL_DIR} COMPONENT TextDocument
@@ -40,7 +42,7 @@ install(FILES
   plaintextmarkupbuilder.h
   texthtmlbuilder.h
   mediawikimarkupbuilder.h
-  ${PROJECT_BINARY_DIR}/grantlee_gui_export.h
+  ${PROJECT_BINARY_DIR}/grantlee_textdocument_export.h
   DESTINATION ${INCLUDE_INSTALL_DIR}/grantlee COMPONENT TextDocument
 )
 
