@@ -153,7 +153,5 @@ private:
 
 }
 
-Q_DECLARE_METATYPE( Grantlee::Template )
-
 #endif
 
