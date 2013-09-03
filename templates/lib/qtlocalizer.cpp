@@ -171,6 +171,8 @@ void QtLocalizer::setAppTranslatorPrefix( const QString& prefix )
   d->m_appTranslatorPrefix = prefix;
 }
 
+// Do I take ownership of the translator? Is that a problem? Yes, I delete it.
+// That probably is a problem.
 void QtLocalizer::installTranslator( QTranslator* translator, const QString &localeName )
 {
   Q_D( QtLocalizer );
