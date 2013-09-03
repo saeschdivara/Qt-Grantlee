@@ -19,11 +19,11 @@ set(htmlapps_SRCS
   templatereply.cpp
 )
 
-grantlee_add_plugin(customplugin
-  customplugin
-  TAGS
-    rssfeed
+add_library(customplugin MODULE
+  customplugin.cpp
+  rssfeed.cpp
 )
+grantlee_adjust_plugin_name(customplugin)
 
 target_link_libraries(customplugin
   ${Grantlee_TEMPLATES_LIBRARIES}
