@@ -13,7 +13,7 @@ if (Grantlee_FIND_COMPONENTS)
   endforeach()
   find_package(Qt5 CONFIG REQUIRED ${RequiredQtComponents})
 else()
-  find_package(Qt5 CONFIG REQUIRED)
+  find_package(Qt5Gui CONFIG REQUIRED)
 endif()
 
 set(Grantlee_MIN_PLUGIN_VERSION "@Grantlee_VERSION_MAJOR@.@Grantlee_MIN_PLUGIN_VERSION@")
