@@ -94,7 +94,6 @@ install(TARGETS Grantlee_Templates EXPORT grantlee_targets
 install(FILES
   abstractlocalizer.h
   cachingloaderdecorator.h
-  containeraccessor.h
   context.h
   engine.h
   exception.h
