@@ -24,6 +24,6 @@
 #ifndef GRANTLEE_CONFIG_P_H
 #define GRANTLEE_CONFIG_P_H
 
-#define GRANTLEE_PLUGIN_PATH "/plugins/"
+#define GRANTLEE_PLUGIN_PATH "plugins/"
 
 #endif // GRANTLEE_CONFIG_P_H

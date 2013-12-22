@@ -21,19 +21,28 @@
  ** CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *********************************************************************************/
 
-#ifndef TEMPLATES_GLOBAL_H
-#define TEMPLATES_GLOBAL_H
+#include <QCoreApplication>
+#include <QDebug>
 
-#include <QtCore/qglobal.h>
+#include <lib/engine.h>
 
-#if defined(TEMPLATE_LIBRARY)
-#  define TEMPLATESSHARED_EXPORT Q_DECL_EXPORT
-#  define GRANTLEE_TEMPLATES_EXPORT Q_DECL_EXPORT
-#  define GRANTLEE_TESTS_EXPORT Q_DECL_EXPORT
-#else
-#  define TEMPLATESSHARED_EXPORT Q_DECL_IMPORT
-#  define GRANTLEE_TEMPLATES_EXPORT Q_DECL_IMPORT
-#  define GRANTLEE_TESTS_EXPORT Q_DECL_IMPORT
-#endif
+using namespace Grantlee;
 
-#endif // TEMPLATES_GLOBAL_H
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+    Engine *engine = new Engine();
+
+    FileSystemTemplateLoader::Ptr loader = FileSystemTemplateLoader::Ptr( new FileSystemTemplateLoader() );
+    loader->setTemplateDirs( QStringList() << "/home/saskyrardisaskyr/Documents/grantlee/examples/build-SimpleTemplateRendering-Desktop_Qt_5_2_0_GCC_64bit-Debug/templates" );
+    engine->addTemplateLoader( loader );
+
+    engine->addPluginPath( "/home/saskyrardisaskyr/Documents/grantlee/examples/build-SimpleTemplateRendering-Desktop_Qt_5_2_0_GCC_64bit-Debug/" );
+
+    Template template1 = engine->loadByName( "index.html" );
+    if (template1->error()) {
+            qDebug() << template1->errorString();
+        }
+
+    return a.exec();
+}
