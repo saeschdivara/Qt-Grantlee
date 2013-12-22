@@ -26,7 +26,7 @@
 #include <QtCore/QVariant>
 #include <QtScript/QScriptValue>
 
-#include "token.h"
+#include "lib/token.h"
 
 namespace Grantlee
 {

@@ -25,7 +25,7 @@
 
 #include <QtCore/QSharedPointer>
 
-#include "node.h"
+#include "lib/node.h"
 
 class QScriptEngine;
 class QScriptContext;

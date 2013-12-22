@@ -20,10 +20,10 @@
 
 #include "filtertag.h"
 
-#include "filterexpression.h"
-#include "../lib/exception.h"
-#include "parser.h"
-#include "util.h"
+#include "lib/filterexpression.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/util.h"
 
 FilterNodeFactory::FilterNodeFactory()
 {

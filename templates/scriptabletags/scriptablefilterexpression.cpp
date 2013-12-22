@@ -22,10 +22,10 @@
 
 #include <QtScript/QScriptEngine>
 
-#include "parser.h"
+#include "lib/parser.h"
 #include "scriptablecontext.h"
 #include "scriptablesafestring.h"
-#include "util.h"
+#include "lib/util.h"
 
 using namespace Grantlee;
 
@@ -85,5 +85,3 @@ bool ScriptableFilterExpression::equals( ScriptableFilterExpression* other, Scri
   Context *c = scriptableC->context();
   return Grantlee::equals( m_filterExpression.resolve( c ), other->m_filterExpression.resolve( c ) );
 }
-
-#include "scriptablefilterexpression.moc"

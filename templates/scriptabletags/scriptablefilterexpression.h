@@ -25,7 +25,7 @@
 
 #include <QtScript/QScriptValue>
 
-#include "filterexpression.h"
+#include "lib/filterexpression.h"
 
 class QScriptContext;
 

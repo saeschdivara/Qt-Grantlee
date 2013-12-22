@@ -20,11 +20,11 @@
 
 #include "include.h"
 
-#include "engine.h"
-#include "exception.h"
-#include "parser.h"
-#include "template.h"
-#include "util.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/template.h"
+#include "lib/util.h"
 
 IncludeNodeFactory::IncludeNodeFactory()
 {

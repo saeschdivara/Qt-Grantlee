@@ -20,10 +20,10 @@
 
 #include "cycle.h"
 
-#include "../lib/exception.h"
-#include "parser.h"
-#include "rendercontext.h"
-#include "util.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/rendercontext.h"
+#include "lib/util.h"
 
 static const char _namedCycleNodes[] = "_namedCycleNodes";
 

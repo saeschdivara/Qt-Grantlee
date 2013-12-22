@@ -23,7 +23,7 @@
 
 #include <QtScript/QScriptValue>
 
-#include "filter.h"
+#include "lib/filter.h"
 
 using namespace Grantlee;
 

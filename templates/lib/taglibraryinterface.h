@@ -85,7 +85,7 @@ public:
     Q_UNUSED( name );
     static const QHash<QString, AbstractNodeFactory*> h;
     return h;
-  };
+  }
 
   /**
     Returns the Filter implementations available in this library.
@@ -94,7 +94,7 @@ public:
     Q_UNUSED( name );
     static const QHash<QString, Filter*> h;
     return h;
-  };
+  }
 };
 
 }

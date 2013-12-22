@@ -20,7 +20,7 @@
 
 #include "comment.h"
 
-#include "parser.h"
+#include "lib/parser.h"
 
 
 CommentNodeFactory::CommentNodeFactory()

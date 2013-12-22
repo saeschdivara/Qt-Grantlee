@@ -20,12 +20,12 @@
 
 #include "l10n_money.h"
 
-#include "abstractlocalizer.h"
-#include "parser.h"
-#include "template.h"
-#include "engine.h"
-#include "exception.h"
-#include "util.h"
+#include "lib/abstractlocalizer.h"
+#include "lib/parser.h"
+#include "lib/template.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
+#include "lib/util.h"
 
 L10nMoneyNodeFactory::L10nMoneyNodeFactory()
 {

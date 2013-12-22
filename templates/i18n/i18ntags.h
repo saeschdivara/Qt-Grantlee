@@ -21,7 +21,7 @@
 #ifndef I18N_TAGS_H
 #define I18N_TAGS_H
 
-#include "taglibraryinterface.h"
+#include "lib/taglibraryinterface.h"
 
 #include "i18n.h"
 #include "i18nc.h"

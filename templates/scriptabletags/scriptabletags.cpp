@@ -25,7 +25,7 @@
 
 #include <QtScript/QScriptEngine>
 
-#include "nodebuiltins_p.h"
+#include "lib/nodebuiltins_p.h"
 
 #include "scriptablenode.h"
 #include "scriptablevariable.h"
@@ -33,9 +33,9 @@
 #include "scriptablefilter.h"
 #include "scriptabletemplate.h"
 #include "scriptablesafestring.h"
-#include "exception.h"
+#include "lib/exception.h"
 
-#include "token.h"
+#include "lib/token.h"
 
 Q_DECLARE_METATYPE( Token )
 
@@ -196,5 +196,3 @@ void ScriptableTagLibrary::addFilter( const QString &filterName )
 {
   m_filterNames << filterName;
 }
-
-#include "scriptabletags.moc"

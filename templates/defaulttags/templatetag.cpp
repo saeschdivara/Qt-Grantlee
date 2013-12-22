@@ -20,9 +20,9 @@
 
 #include "templatetag.h"
 
-#include "../lib/exception.h"
-#include "grantlee_tags_p.h"
-#include "parser.h"
+#include "lib/exception.h"
+#include "lib/grantlee_tags_p.h"
+#include "lib/parser.h"
 
 TemplateTagNodeFactory::TemplateTagNodeFactory()
 {

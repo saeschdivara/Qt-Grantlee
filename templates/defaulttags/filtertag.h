@@ -21,7 +21,7 @@
 #ifndef FILTERTAG_H
 #define FILTERTAG_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

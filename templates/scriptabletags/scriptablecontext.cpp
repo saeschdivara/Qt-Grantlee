@@ -20,8 +20,8 @@
 
 #include "scriptablecontext.h"
 
-#include "context.h"
-#include "node.h"
+#include "lib/context.h"
+#include "lib/node.h"
 
 
 ScriptableContext::ScriptableContext( Context *c, QObject *parent )
@@ -66,5 +66,3 @@ QString ScriptableContext::render( const QObjectList &list ) const
   nodeList.render( &stream, m_c );
   return ret;
 }
-
-#include "scriptablecontext.moc"

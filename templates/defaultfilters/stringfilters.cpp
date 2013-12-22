@@ -20,7 +20,7 @@
 
 #include "stringfilters.h"
 
-#include "util.h"
+#include "lib/util.h"
 
 #include <QtCore/QVariant>
 

@@ -21,7 +21,7 @@
 #ifndef DATETIMEFILTERS_H
 #define DATETIMEFILTERS_H
 
-#include "filter.h"
+#include "lib/filter.h"
 
 using namespace Grantlee;
 

@@ -20,7 +20,7 @@
 
 #include "datetime.h"
 
-#include "util.h"
+#include "lib/util.h"
 
 #include <QtCore/QDateTime>
 

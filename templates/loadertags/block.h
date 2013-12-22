@@ -21,7 +21,7 @@
 #ifndef BLOCKNODE_H
 #define BLOCKNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 namespace Grantlee
 {

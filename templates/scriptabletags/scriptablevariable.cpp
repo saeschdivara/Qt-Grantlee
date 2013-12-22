@@ -25,7 +25,7 @@
 
 #include "scriptablecontext.h"
 #include "scriptablesafestring.h"
-#include "util.h"
+#include "lib/util.h"
 
 Q_SCRIPT_DECLARE_QMETAOBJECT( ScriptableVariable, QObject* )
 
@@ -76,5 +76,3 @@ bool ScriptableVariable::isTrue( ScriptableContext* c )
 {
   return m_variable.isTrue( c->context() );
 }
-
-#include "scriptablevariable.moc"

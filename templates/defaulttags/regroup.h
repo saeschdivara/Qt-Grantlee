@@ -21,7 +21,7 @@
 #ifndef REGROUPNODE_H
 #define REGROUPNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

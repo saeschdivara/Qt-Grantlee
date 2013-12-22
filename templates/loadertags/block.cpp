@@ -21,11 +21,11 @@
 #include "block.h"
 
 #include "blockcontext.h"
-#include "exception.h"
-#include "parser.h"
-#include "rendercontext.h"
-#include "template.h"
-#include "util.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/rendercontext.h"
+#include "lib/template.h"
+#include "lib/util.h"
 
 const char * __loadedBlocks = "__loadedBlocks";
 

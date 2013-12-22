@@ -20,7 +20,7 @@
 
 #include "integers.h"
 
-#include "util.h"
+#include "lib/util.h"
 
 QVariant AddFilter::doFilter( const QVariant& input, const QVariant &argument, bool autoescape ) const
 {

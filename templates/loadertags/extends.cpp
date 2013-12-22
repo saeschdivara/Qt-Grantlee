@@ -22,13 +22,13 @@
 
 #include "block.h"
 #include "blockcontext.h"
-#include "engine.h"
-#include "exception.h"
-#include "nodebuiltins_p.h"
-#include "parser.h"
-#include "rendercontext.h"
-#include "template.h"
-#include "util.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
+#include "lib/nodebuiltins_p.h"
+#include "lib/parser.h"
+#include "lib/rendercontext.h"
+#include "lib/template.h"
+#include "lib/util.h"
 
 #include <QtCore/QListIterator>
 

@@ -24,7 +24,7 @@
 #include "exception.h"
 #include "grantlee_config_p.h"
 #include "grantlee_version.h"
-#include "scriptabletags.h"
+#include "scriptabletags/scriptabletags.h"
 #include "template_p.h"
 #include "templateloader.h"
 
@@ -387,5 +387,3 @@ bool Engine::smartTrimEnabled() const
   Q_D( const Engine );
   return d->m_smartTrimEnabled;
 }
-
-#include "engine.moc"

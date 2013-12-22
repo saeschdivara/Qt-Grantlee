@@ -21,7 +21,7 @@
 #include "scriptableparser.h"
 #include "scriptablenode.h"
 
-#include "parser.h"
+#include "lib/parser.h"
 
 
 ScriptableParser::ScriptableParser( Grantlee::Parser* p, QObject* parent )
@@ -72,6 +72,3 @@ QObjectList ScriptableParser::parse( QObject *parent, const QStringList& stopAt 
   }
   return objList;
 }
-
-
-#include "scriptableparser.moc"

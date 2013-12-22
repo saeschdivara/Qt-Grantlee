@@ -21,7 +21,7 @@
 #ifndef FORNODE_H
 #define FORNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

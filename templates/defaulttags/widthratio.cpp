@@ -20,8 +20,8 @@
 
 #include "widthratio.h"
 
-#include "../lib/exception.h"
-#include "parser.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
 
 
 WidthRatioNodeFactory::WidthRatioNodeFactory()

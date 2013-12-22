@@ -21,7 +21,7 @@
 #ifndef WITHNODE_H
 #define WITHNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

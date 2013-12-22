@@ -21,7 +21,7 @@
 #ifndef IFEQUALNODE_H
 #define IFEQUALNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

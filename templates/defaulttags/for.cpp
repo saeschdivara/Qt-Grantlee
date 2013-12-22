@@ -20,9 +20,9 @@
 
 #include "for.h"
 
-#include "../lib/exception.h"
-#include "parser.h"
-#include "metaenumvariable_p.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/metaenumvariable_p.h"
 
 ForNodeFactory::ForNodeFactory()
 {

@@ -21,7 +21,7 @@
 #ifndef TEMPLATETAGNODE_H
 #define TEMPLATETAGNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

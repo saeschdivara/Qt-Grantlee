@@ -24,7 +24,7 @@
 #include <QtCore/QObject>
 #include <QtScript/QScriptValue>
 
-#include "safestring.h"
+#include "lib/safestring.h"
 
 class QScriptContext;
 

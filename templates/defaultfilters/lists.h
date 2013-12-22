@@ -23,7 +23,7 @@
 
 //krazy:excludeall=includes
 
-#include "filter.h"
+#include "lib/filter.h"
 
 using namespace Grantlee;
 

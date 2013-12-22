@@ -21,7 +21,7 @@
 #ifndef L10N_MONEYNODE_H
 #define L10N_MONEYNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 namespace Grantlee
 {

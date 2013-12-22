@@ -22,14 +22,14 @@
 
 #include <QtCore/QStringList>
 
-#include "abstractlocalizer.h"
-#include "parser.h"
-#include "template.h"
-#include "engine.h"
-#include "exception.h"
+#include "lib/abstractlocalizer.h"
+#include "lib/parser.h"
+#include "lib/template.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
 
 #include <QtCore/QDebug>
-#include <util.h>
+#include <lib/util.h>
 #include <complex>
 
 I18ncpNodeFactory::I18ncpNodeFactory()

@@ -21,7 +21,7 @@
 #ifndef LOGICFILTERS_H
 #define LOGICFILTERS_H
 
-#include "filter.h"
+#include "lib/filter.h"
 
 using namespace Grantlee;
 

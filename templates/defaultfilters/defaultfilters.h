@@ -28,7 +28,7 @@
 #include "misc.h"
 #include "stringfilters.h"
 
-#include "taglibraryinterface.h"
+#include "lib/taglibraryinterface.h"
 
 namespace Grantlee
 {

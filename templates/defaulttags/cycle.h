@@ -21,7 +21,7 @@
 #ifndef CYCLENODE_H
 #define CYCLENODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

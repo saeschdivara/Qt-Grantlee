@@ -21,7 +21,7 @@
 #ifndef COMMENTNODE_H
 #define COMMENTNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

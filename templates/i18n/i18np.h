@@ -21,7 +21,7 @@
 #ifndef I18NPNODE_H
 #define I18NPNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 namespace Grantlee
 {

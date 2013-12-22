@@ -21,7 +21,7 @@
 #ifndef INCLUDENODE_H
 #define INCLUDENODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 namespace Grantlee
 {

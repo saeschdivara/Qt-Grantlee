@@ -24,7 +24,7 @@
 #include <QtCore/QObject>
 #include <QtScript/QScriptValue>
 
-#include "variable.h"
+#include "lib/variable.h"
 
 class QScriptContext;
 

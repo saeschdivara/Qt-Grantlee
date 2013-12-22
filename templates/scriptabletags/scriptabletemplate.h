@@ -26,7 +26,7 @@
 
 #include <QtScript/QScriptValue>
 
-#include "template.h"
+#include "lib/template.h"
 
 namespace Grantlee
 {

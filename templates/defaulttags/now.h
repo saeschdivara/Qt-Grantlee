@@ -21,7 +21,7 @@
 #ifndef NOWNODE_H
 #define NOWNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

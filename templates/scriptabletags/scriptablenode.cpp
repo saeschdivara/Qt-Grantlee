@@ -22,12 +22,12 @@
 
 #include <QtScript/QScriptEngine>
 
-#include "context.h"
+#include "lib/context.h"
 #include "scriptablecontext.h"
 #include "scriptableparser.h"
-#include "engine.h"
-#include "exception.h"
-#include "parser.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
 
 QScriptValue nodeToScriptValue( QScriptEngine *engine, Node* const &node )
 {
@@ -156,6 +156,3 @@ void ScriptableNode::setNodeList( const QString &name, QObjectList objectList )
   }
   m_concreteNode.setProperty( name, objectListArray );
 }
-
-
-#include "scriptablenode.moc"

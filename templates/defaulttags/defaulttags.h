@@ -41,8 +41,8 @@
 #include "widthratio.h"
 #include "with.h"
 
-#include "node.h"
-#include "taglibraryinterface.h"
+#include "lib/node.h"
+#include "lib/taglibraryinterface.h"
 
 namespace Grantlee
 {

@@ -21,7 +21,7 @@
 #ifndef FIRSTOFNODE_H
 #define FIRSTOFNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

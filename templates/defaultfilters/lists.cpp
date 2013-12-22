@@ -20,9 +20,9 @@
 
 #include "lists.h"
 
-#include "metatype.h"
-#include "util.h"
-#include "variable.h"
+#include "lib/metatype.h"
+#include "lib/util.h"
+#include "lib/variable.h"
 
 #include <QtCore/QDateTime>
 

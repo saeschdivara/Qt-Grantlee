@@ -20,7 +20,7 @@
 
 #include "debug.h"
 
-#include "parser.h"
+#include "lib/parser.h"
 
 DebugNodeFactory::DebugNodeFactory()
 {

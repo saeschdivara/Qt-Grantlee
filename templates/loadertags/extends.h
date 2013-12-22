@@ -21,8 +21,8 @@
 #ifndef EXTENDSNODE_H
 #define EXTENDSNODE_H
 
-#include "node.h"
-#include "template.h"
+#include "lib/node.h"
+#include "lib/template.h"
 
 namespace Grantlee
 {

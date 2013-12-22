@@ -20,10 +20,10 @@
 
 #include "mediafinder.h"
 
-#include "engine.h"
-#include "exception.h"
-#include "parser.h"
-#include "util.h"
+#include "lib/engine.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/util.h"
 
 #include <QtCore/QUrl>
 

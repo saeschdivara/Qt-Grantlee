@@ -20,8 +20,8 @@
 
 #include "spaceless.h"
 
-#include "parser.h"
-#include "util.h"
+#include "lib/parser.h"
+#include "lib/util.h"
 
 SpacelessNodeFactory::SpacelessNodeFactory()
 {

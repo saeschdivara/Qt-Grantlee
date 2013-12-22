@@ -21,7 +21,7 @@
 #ifndef WITHLOCALENODE_H
 #define WITHLOCALENODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

@@ -21,7 +21,7 @@
 #ifndef AUTOESCAPENODE_H
 #define AUTOESCAPENODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

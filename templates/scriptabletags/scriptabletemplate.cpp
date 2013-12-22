@@ -23,9 +23,9 @@
 #include <QtScript/QScriptContext>
 #include <QtScript/QScriptEngine>
 
-#include "engine.h"
-#include "context.h"
-#include "node.h"
+#include "lib/engine.h"
+#include "lib/context.h"
+#include "lib/node.h"
 #include "scriptablecontext.h"
 
 QScriptValue ScriptableTemplateConstructor( QScriptContext *context,
@@ -82,6 +82,4 @@ void ScriptableTemplate::setNodeList( const QObjectList& list )
   }
   m_template->setNodeList( nodeList );
 }
-
-#include "scriptabletemplate.moc"
 

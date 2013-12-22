@@ -21,8 +21,8 @@
 #ifndef SCRIPTABLETAGS_H
 #define SCRIPTABLETAGS_H
 
-#include "node.h"
-#include "taglibraryinterface.h"
+#include "lib/node.h"
+#include "lib/taglibraryinterface.h"
 
 // #include <QtScript/QScriptEngine>
 

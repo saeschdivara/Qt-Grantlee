@@ -21,7 +21,7 @@
 #ifndef IFCHANGEDNODE_H
 #define IFCHANGEDNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

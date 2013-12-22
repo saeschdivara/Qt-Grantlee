@@ -21,7 +21,7 @@
 #ifndef MEDIAFINDER_H
 #define MEDIAFINDER_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

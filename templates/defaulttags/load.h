@@ -21,7 +21,7 @@
 #ifndef LOADNODE_H
 #define LOADNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

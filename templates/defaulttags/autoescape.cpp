@@ -20,10 +20,10 @@
 
 #include "autoescape.h"
 
-#include "exception.h"
-#include "parser.h"
-#include "template.h"
-#include "util.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/template.h"
+#include "lib/util.h"
 
 #include <QtCore/QFile>
 

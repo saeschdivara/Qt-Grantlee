@@ -20,9 +20,9 @@
 
 #include "firstof.h"
 
-#include "../lib/exception.h"
-#include "parser.h"
-#include "util.h"
+#include "lib/exception.h"
+#include "lib/parser.h"
+#include "lib/util.h"
 
 
 FirstOfNodeFactory::FirstOfNodeFactory()

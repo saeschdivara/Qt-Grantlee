@@ -21,8 +21,8 @@
 #ifndef LOADERTAGS_H
 #define LOADERTAGS_H
 
-#include "node.h"
-#include "taglibraryinterface.h"
+#include "lib/node.h"
+#include "lib/taglibraryinterface.h"
 
 #include "block.h"
 #include "extends.h"

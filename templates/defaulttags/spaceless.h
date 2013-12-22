@@ -21,7 +21,7 @@
 #ifndef SPACELESSNODE_H
 #define SPACELESSNODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

@@ -22,7 +22,7 @@
 
 #include <QtScript/QScriptEngine>
 
-#include "util.h"
+#include "lib/util.h"
 
 QScriptValue markSafeFunction( QScriptContext *context,
                                QScriptEngine *engine )
@@ -77,6 +77,3 @@ QString ScriptableSafeString::rawString()
 {
   return m_safeString;
 }
-
-#include "scriptablesafestring.moc"
-

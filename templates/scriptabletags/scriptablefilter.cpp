@@ -21,7 +21,7 @@
 #include "scriptablefilter.h"
 #include "scriptablesafestring.h"
 
-#include "util.h"
+#include "lib/util.h"
 
 #include <QtScript/QScriptEngine>
 

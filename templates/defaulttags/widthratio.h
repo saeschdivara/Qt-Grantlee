@@ -21,7 +21,7 @@
 #ifndef WIDTHRATIONODE_H
 #define WIDTHRATIONODE_H
 
-#include "node.h"
+#include "lib/node.h"
 
 using namespace Grantlee;
 

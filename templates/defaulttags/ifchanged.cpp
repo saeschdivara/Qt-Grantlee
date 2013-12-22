@@ -20,7 +20,7 @@
 
 #include "ifchanged.h"
 
-#include "parser.h"
+#include "lib/parser.h"
 
 #include <QtCore/QDateTime>
 
