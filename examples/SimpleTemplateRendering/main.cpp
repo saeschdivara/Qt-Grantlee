@@ -23,8 +23,11 @@
 
 #include <QCoreApplication>
 #include <QDebug>
+#include <QFile>
+#include <QTextStream>
 
 #include <lib/engine.h>
+#include <lib/outputstream.h>
 
 using namespace Grantlee;
 
@@ -39,10 +42,21 @@ int main(int argc, char *argv[])
 
     engine->addPluginPath( "/home/saskyrardisaskyr/Documents/grantlee/examples/build-SimpleTemplateRendering-Desktop_Qt_5_2_0_GCC_64bit-Debug/" );
 
-    Template template1 = engine->loadByName( "index.html" );
-    if (template1->error()) {
-            qDebug() << template1->errorString();
+    Template t = engine->loadByName( "index.html" );
+    if (t->error()) {
+            qDebug() << t->errorString();
         }
+
+    Context c;
+    c.insert("name", QString("Sascha"));
+    QFile outputFile("./output");
+    outputFile.open(QFile::WriteOnly);
+    QTextStream tstream( &outputFile );
+
+    OutputStream os(&tstream);
+    t->render( &os, &c );
+
+    outputFile.close();
 
     return a.exec();
 }
