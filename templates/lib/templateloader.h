@@ -164,7 +164,7 @@ public:
   QStringList templateDirs() const;
 
 private:
-  QString getFilePath() const;
+  QString getFilePath(const QString &dir, const QString &name) const;
 
   QString m_themeName;
   QStringList m_templateDirs;
