@@ -74,7 +74,16 @@ void FileSystemTemplateLoader::setTemplateDirs( const QStringList &dirs )
 
 QStringList FileSystemTemplateLoader::templateDirs() const
 {
-  return m_templateDirs;
+    return m_templateDirs;
+}
+
+QString FileSystemTemplateLoader::getFilePath(const QString & dir, const QString & name) const
+{
+    if ( !m_themeName.isEmpty() ) {
+        return dir + QLatin1Char( '/' ) + m_themeName + QLatin1Char( '/' ) + name;
+    } else {
+        return dir + QLatin1Char( '/' ) + name;
+    }
 }
 
 bool FileSystemTemplateLoader::canLoadTemplate( const QString &name ) const
@@ -86,7 +95,7 @@ bool FileSystemTemplateLoader::canLoadTemplate( const QString &name ) const
     if ( i >= m_templateDirs.size() )
       break;
 
-    file.setFileName( m_templateDirs.at( i ) + QLatin1Char( '/' ) + m_themeName + QLatin1Char( '/' ) + name );
+    file.setFileName( getFilePath(m_templateDirs.at( i ), name) );
     ++i;
   }
 
@@ -106,7 +115,7 @@ Template FileSystemTemplateLoader::loadByName( const QString &fileName, Engine c
     if ( i >= m_templateDirs.size() )
       break;
 
-    file.setFileName( m_templateDirs.at( i ) + QLatin1Char( '/' ) + m_themeName + QLatin1Char( '/' ) + fileName );
+    file.setFileName( getFilePath(m_templateDirs.at( i ), fileName) );
     const QFileInfo fi( file );
 
     if ( file.exists() &&
@@ -134,7 +143,7 @@ QPair<QString, QString> FileSystemTemplateLoader::getMediaUri( const QString& fi
     if ( i >= m_templateDirs.size() )
       break;
 
-    file.setFileName( m_templateDirs.at( i ) + QLatin1Char( '/' ) + m_themeName + QLatin1Char( '/' ) + fileName );
+    file.setFileName( getFilePath(m_templateDirs.at( i ), fileName) );
 
     const QFileInfo fi( file );
     if ( !fi.canonicalFilePath().contains( QDir( m_templateDirs.at( i ) ).canonicalPath() ) ) {
