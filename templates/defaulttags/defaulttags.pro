@@ -64,3 +64,9 @@ unix {
 }
 
 OTHER_FILES +=
+
+
+macx: LIBS += -L$$PWD/../../../../dist/3rdparty/grantlee/template_library/debug/ -ltemplate_library
+
+INCLUDEPATH += $$PWD/../../../../dist/3rdparty/grantlee/template_library/debug
+DEPENDPATH += $$PWD/../../../../dist/3rdparty/grantlee/template_library/debug
